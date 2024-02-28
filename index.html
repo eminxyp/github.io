@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+  <link rel="shortcut icon" type="https://cdn.discordapp.com/attachments/1033344023760478259/1212452180078887035/Adsz_tasarm_8.png?ex=65f1e316&is=65df6e16&hm=886b7a441af2b6533cd52704b60215a9d7c14202a2b84a2fec313b9188f5317e&" href="https://cdn.discordapp.com/attachments/1033344023760478259/1212452180078887035/Adsz_tasarm_8.png?ex=65f1e316&is=65df6e16&hm=886b7a441af2b6533cd52704b60215a9d7c14202a2b84a2fec313b9188f5317e&"/>
+<title>Eminxyp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" />
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="app">
+<div class="card">
+<div class="front-face">
+<div class="contents front">
+<p>EMİNXYP</p>
+<p class="bottom-bar"></p>
+<span>Ceo and Developer </span>
+</div>
+</div>
+<div class="back-face">
+<div class="contents back">
+<h2>Follow Me</h2>
+<span>My socials :</span>
+<div class="icons">
+<a href="https://www.instagram.com/eminxyp/">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://github.com/eminxyp">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://discord.com/users/1033338920240418837">
+<i class="fab fa-discord"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style> 
+/****************************************************
+* General Settings
+****************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    background: radial-gradient(circle, rgb(48, 48, 48) 43%, rgb(0, 0, 0) 88%);
+}
+
+.card,
+.front-face,
+.back-face,
+.contents {
+    position: absolute;
+}
+
+
+/****************************************************
+* Card Settings
+****************************************************/
+
+.card {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 290px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front-face,
+.back-face {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('https://media1.tenor.com/m/soKwd8Bn0-sAAAAC/the-spectacular-spider-man-spectacular-spider-man.gif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4, .2, .2, 1);
+}
+
+.contents {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    perspective: 100px;
+    transform: translateY(-50%) translateZ(100px) scale(.9999);
+}
+
+.icons {
+    margin: 10px 0;
+}
+
+.icons i {
+    color: #042f4b;
+    background: #ebebeb;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+/****************************************************
+* Front Face
+****************************************************/
+
+.front p {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.front span {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.front p.bottom-bar::after {
+    content: '';
+    display: block;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 150px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+
+/****************************************************
+* Back Face
+****************************************************/
+
+.back {
+    color: white
+}
+
+.back h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.back span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.back-face {
+    transform: rotateY(180deg);
+    background: linear-gradient(45deg, #0e0e0e 0%, #5a5a5a 100%);
+}
+
+.card:hover>.back-face {
+    transform: rotateY(0deg);
+}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"7faaf16e4d9e0ff6","version":"2023.8.0","r":1,"token":"90cb2cd1d9964fc1a16c36bc3796622d","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
